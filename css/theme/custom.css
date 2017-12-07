@@ -1,0 +1,10 @@
+.tease {
+    position: absolute;
+    top: 150%;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+table {
+    font-size:24px !important;
+}

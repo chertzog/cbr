@@ -1,0 +1,698 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Crude By Rail</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+		<link rel="stylesheet" href="css/theme/custom.css">
+
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Crude By Rail</h2>
+					<p>Chris Hertzog</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Intro</h2>
+					</section>
+					<section>
+						<h2>What is it?</h2>
+						<p class="">Crude by rail (CBR) is the term used for shipping crude oil...</p>
+						<h3 class="fragment">by rail</h3>
+					   <!--<p class=" tease"><small>big surprise</small></p>-->
+					</section>
+					<section>
+						<h2>Why is it important?</h2>
+						<p>CBR fills the gaps left in the pipeline network caused by:</p>
+						<ul>
+							<li>Providing service to areas without pipeline terminals</li>
+							<li>Transporting excess supply during pipeline congestion</li>
+							<li>Faster service is needed</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Transportation Modes for Crude Oil</h3>
+						<canvas data-chart="doughnut">
+							<!--
+                             {
+                             "data": {
+                              "labels": ["Pipeline","Ship","Truck", "Rail"],
+                              "datasets":[
+                               {
+                                "data":[70,23,4,3],
+
+                                "label":"Percentage of Oil",
+                                "backgroundColor":["#132026","#1F3B49","#2B6E8E","#2D8EBD"]
+                               }
+                              ]
+                             },
+                             "options": {
+                                "legend": {
+                                  "labels": {
+                                    "display": true,
+                                    "fontColor": "#fff",
+                                    "fontSize": 20
+                                   }
+                                 }
+                              }
+                            }
+                            -->
+						</canvas>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>History</h2>
+					</section>
+					<section>
+						<h3>Prior to 2009</h3>
+						<p>Crude by rail was almost non-existent.</p>
+						<p>Only 20,000 barrels/day were shipped.</p>
+						<p>Accidents/spills were few and far between.</p>
+					</section>
+					<section>
+						<h3>2009 to 2014</h3>
+						<p>Domestic oil production skyrocketed</p>
+						<p>By the end of 2014, <h2>1.1M</h2>barrels/day were being shipped by rail</p>
+						<p>More spills in 2013 than previous 37 years combined</p>
+					</section>
+					<section>
+						<h3>2015 to 2017</h3>
+						<p>Dakota Access Pipeline opens</p>
+						<p>Keystone Pipeline finishes Gulf Coast Extension</p>
+						<p>2016 shipped less crude by rail than 2012</p>
+					</section>
+					<section>
+						<h3>Tank Cars Shipped by Year</h3>
+						<canvas class="chartjs-render-monitor" data-chart="line" style="height: 480px; width: 960px; display: block;" width="960" height="480">
+							<!--
+                            {
+                            "data" : {
+                                "labels" : ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+                                "datasets" : [
+                                {
+                                "data":[9500, 10840, 29605, 65751, 233696, 407761, 493146, 409949, 211986],
+                                "label":"Cars","backgroundColor":"#2B6E8E"
+                               }
+                                ]
+                                },
+                                "options": {
+                                  "legend": {
+                                    "labels": {
+                                      "display": true,
+                                      "fontColor": "#fff",
+                                      "fontSize": 20
+                                    }
+                                  },
+                                  "scales": {
+                                    "yAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }],
+                                    "xAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }]
+                                  }
+                                }
+                            }
+                            -->
+						</canvas>
+					</section>
+				</section>
+				<section>
+					<h2>Present</h2>
+				</section>
+
+				<!-- Threats -->
+				<section>
+					<section>
+						<h2>Threats</h2>
+					</section>
+					<section>
+						<h3>Current Threats</h3>
+						<p>The industry is facing a number of issues:</p>
+						<ul>
+							<li>Continued pipeline construction</li>
+							<li>Cheaper foreign oil</li>
+							<li>Increased regulation</li>
+							<li>Backlog of tank car orders</li>
+						</ul>
+					</section>
+					<section>
+						<h3>New Pipeline Construction</h3>
+						<ul>
+							<li>Keystone XL</li>
+							<li>2016 - 9 new openings/expansions</li>
+							<li>2017 - 12 new openings/expansions</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Crude Oil Pipeline Network</h3>
+					    <img src="charts/crude-pipeline-map.png"/>
+					</section>
+					<section>
+						<h3>Cheaper Foreign Oil</h3>
+						<ul>
+							<li>Jones Act - more expensive to ship oil from gulf coast to east coast, than to import from overseas</li>
+							<li>Cheaper to import than ship domestic via rail</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Shipping Rates</h3>
+						<table>
+							<thead>
+							<tr>
+								<td>Origin</td>
+								<td>Destination</td>
+								<td>$/bl</td>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>US Gulf Coast</td>
+								<td>North East US</td>
+								<td>$5-6.00</td>
+							</tr>
+							<tr>
+								<td>Nigeria</td>
+								<td>North East US</td>
+								<td>$1.45-1.70</td>
+							</tr>
+							<tr>
+								<td>Saudi Arabia</td>
+								<td>North East US</td>
+								<td>$1.90</td>
+							</tr>
+							<tr>
+								<td>Eastern Canada</td>
+								<td>North East US</td>
+								<td>$1.20</td>
+							</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Increased Regulations</h3>
+						<ul>
+							<li>DOT 117 vs DOT 111</li>
+							<li>Speed restrictions</li>
+							<li>Rail routes (urban vs rural)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>DOT 111 vs DOT 117 </h3>
+
+						<canvas data-chart="line">
+							<!--
+                            {
+                             "data": {
+                              "labels": [2013,	2014,	2015,	2016],
+                              "datasets":[
+
+                               {
+                                "data":[60,84,1303,2925],
+                                "type": "line",
+                                "label":"DOT 117 Cars","backgroundColor":"#2D8EBD"
+                               },
+                                {
+                                "data":[14337,11581,5289,366],
+                                "label":"DOT 111 Cars","backgroundColor":"#1F3B49"
+                               }
+                              ]
+                             },
+                             "options": {
+                                  "legend": {
+                                    "labels": {
+                                      "display": true,
+                                      "fontColor": "#fff",
+                                      "fontSize": 20
+                                    }
+                                  },
+                                  "scales": {
+                                    "yAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }],
+                                    "xAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }]
+                                  }
+                                }
+                            }
+                            -->
+
+						</canvas>
+
+
+					</section>
+					<section>
+						<h3>Backlog of Tank Car Orders</h3>
+						<ul>
+							<li>Approximately 18 months for a new tank car</li>
+							<li>DOT Restrictions forcing replacement / retrofit by 2018</li>
+							<li>DOT 111 car storage costs</li>
+						</ul>
+					</section>
+				</section>
+
+
+				<!-- Opportunities -->
+				<section>
+					<section>
+						<h2>Opportunities</h2>
+					</section>
+					<section>
+						<h3>New Opportunities</h3>
+						<ul>
+							<li>Increasing domestic oil production</li>
+							<li>Foreign oil price Increase</li>
+							<li>Regulation changes</li>
+							<li>Pipe-to-Rail / Rail-to-Pipe</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Domestic Oil Production</h3>
+						<ul>
+							<li>Some predict US oil production will double in next 5 years</li>
+							<li>Production from US / Canada will out-supply pipeline network by 2020</li>
+						</ul>
+					</section>
+				    <section>
+						<h3>US Oil Production</h3>
+						<canvas data-chart="line">
+
+							<!--
+                            {
+                             "data": {
+                              "labels": [1900,	1901,	1902,	1903,	1904,	1905,	1906,	1907,	1908,	1909,	1910,	1911,	1912,	1913,	1914,	1915,	1916,	1917,	1918,	1919,	1920,	1921,	1922,	1923,	1924,	1925,	1926,	1927,	1928,	1929,	1930,	1931,	1932,	1933,	1934,	1935,	1936,	1937,	1938,	1939,	1940,	1941,	1942,	1943,	1944,	1945,	1946,	1947,	1948,	1949,	1950,	1951,	1952,	1953,	1954,	1955,	1956,	1957,	1958,	1959,	1960,	1961,	1962,	1963,	1964,	1965,	1966,	1967,	1968,	1969,	1970,	1971,	1972,	1973,	1974,	1975,	1976,	1977,	1978,	1979,	1980,	1981,	1982,	1983,	1984,	1985,	1986,	1987,	1988,	1989,	1990,	1991,	1992,	1993,	1994,	1995,	1996,	1997,	1998,	1999,	2000,	2001,	2002,	2003,	2004,	2005,	2006,	2007,	2008,	2009,	2010,	2011,	2012,	2013,	2014,	2015,	2016],
+                              "datasets":[
+                               {
+                                "data":[174,	190,	243,	275,	320,	369,	347,	455,	488,	502,	574,	604,	609,	681,	728,	770,	822,	919,	920,	1037,	1210,	1294,	1527,	2007,	1951,	1700,	2112,	2469,	2463,	2760,	2460,	2332,	2145,	2481,	2488,	2723,	3001,	3500,	3324,	3464,	4107,	3847,	3796,	4125,	4584,	4695,	4749,	5088,	5520,	5046,	5407,	6158,	6256,	6458,	6342,	6807,	7151,	7170,	6710,	7054,	7035,	7183,	7332,	7542,	7614,	7804,	8295,	8810,	9096,	9238,	9637,	9463,	9441,	9208,	8774,	8375,	8132,	8245,	8707,	8552,	8597,	8572,	8649,	8688,	8879,	8971,	8680,	8349,	8140,	7613,	7355,	7417,	7171,	6847,	6662,	6560,	6465,	6452,	6252,	5881,	5822,	5801,	5744,	5649,	5441,	5184,	5086,	5074,	4998,	5349,	5475,	5643,	6497,	7466,	8753,	9408,	8857],
+                                "label":"Thousands of Barrels/Day ","backgroundColor":"#2D8EBD"
+                               }
+
+                              ]
+                             },
+
+                             "options": {
+                                  "legend": {
+                                    "labels": {
+                                      "display": true,
+                                      "fontColor": "#fff",
+                                      "fontSize": 20
+                                    }
+                                  },
+                                  "scales": {
+                                    "yAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }],
+                                    "xAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }]
+                                  }
+                                }
+
+
+                            }
+                            -->
+
+						</canvas>
+					</section>
+					<section>
+						<h3>Expensive Foreign Oil</h3>
+						<ul>
+							<li>OPEC has cut production</li>
+							<li>Crude prices historically rise after OPEC production cuts</li>
+							<li>Cheaper to transport domestic crude to east coast via rail vs importing</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Cost of Foreign Oil Imports</h3>
+						<canvas data-chart="line">
+
+							<!--
+                            {
+                             "data": {
+                              "labels": [1973,	1974,	1975,	1976,	1977,	1978,	1979,	1980,	1981,	1982,	1983,	1984,	1985,	1986,	1987,	1988,	1989,	1990,	1991,	1992,	1993,	1994,	1995,	1996,	1997,	1998,	1999,	2000,	2001,	2002,	2003,	2004,	2005,	2006,	2007,	2008,	2009,	2010,	2011,	2012,	2013,	2014,	2015,	2016],
+                              "datasets":[
+                               {
+                                "data":[6.41,	12.32,	12.7,	13.32,	14.36,	14.35,	21.45,	33.67,	36.47,	33.18,	28.93,	28.54,	26.67,	13.49,	17.65,	14.08,	17.68,	21.13,	18.02,	17.75,	15.72,	15.18,	16.78,	20.31,	18.11,	11.84,	17.23,	27.53,	21.82,	23.91,	27.69,	36.07,	49.29,	59.11,	67.97,	93.33,	60.23,	76.5,	102.92,	101,	96.99,	88.16,	45.38,	38.56],
+                                "yAxisID": "1",
+                                "label":"Cost per barrel landed","backgroundColor":"#2D8EBD"
+                               },
+                               {
+                                "data":[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1],
+                                "yAxisID": "2",
+                                "type": "line",
+                                "label":"OPEC Production Cuts","backgroundColor":"#132026"
+                               }
+                              ]
+                             },
+
+                              "options": {
+                                "legend": {
+                                    "labels": {
+                                      "display": true,
+                                      "fontColor": "#fff",
+                                      "fontSize": 20
+                                    }
+                                  },
+                                "scales": {
+                                "xAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }],
+                                  "yAxes": [{
+                                    "position": "left",
+                                    "id": "1",
+                                    "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                  }, {
+                                   "position": "right",
+                                    "id": "2",
+                                    "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                  }]
+                                }
+                              }
+
+
+                            }
+                            -->
+
+						</canvas>
+
+					</section>
+					<section>
+						<h3>Regulation Changes</h3>
+						<ul>
+							<li>Pipelines are under increased scrutiny</li>
+							<li>Jones Act repeal has been debated</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Pipe-to-Rail / Rail-to-Pipe</h3>
+						<ul>
+							<li>New Innovations for faster loading/unloading</li>
+							<li>Shorter runs means more turns or car inventory</li>
+							<li>Benefits of both rail and pipelines</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- WEAKNESSES -->
+				<section>
+					<section>
+						<h2>Weaknesses</h2>
+					</section>
+					<section>
+						<h3>Industry Weaknesses</h3>
+						<ul>
+							<li>Pricing</li>
+							<li>Carbon Footprint / Environmental</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Pricing</h3>
+						<ul>
+							<li>Prices are based on market rates</li>
+							<li>With increasing pipeline usage, rail demand has been decreasing</li>
+							<li>More expensive than pipelines</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Rail vs Pipeline Pricing</h3>
+						<table>
+							<thead>
+							<tr><td colspan="4">Pipeline</td></tr>
+							<tr>
+								<td>Origin</td>
+								<td>Destination</td>
+								<td>Crude</td>
+								<td>Rate $/bl</td>
+							</tr>
+							</thead>
+							<tbody>
+						 	<tr>
+								<td>Alberta, CAN</td>
+								<td>Cushing, TX</td>
+								<td>Lght</td>
+								<td>$3.78</td>
+							</tr>
+						 	<tr>
+								<td>Alberta, CAN</td>
+								<td>Cushing, TX</td>
+								<td>Heavy</td>
+								<td>$4.54</td>
+							</tr>
+							<tr>
+								<td>Cushing, OK</td>
+								<td>Houston, TX</td>
+								<td>Light</td>
+								<td>$2.71</td>
+							</tr>
+							<tr>
+								<td>Cushing, OK</td>
+								<td>Houston, TX</td>
+								<td>Heavy</td>
+								<td>$3.26</td>
+							</tr>
+							</tbody>
+							<thead>
+							<tr><td colspan="4">Rail</td></tr>
+							<tr>
+								<td>Origin</td>
+								<td>Destination</td>
+								<td>Crude</td>
+								<td>Rate $/bl</td>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>North Dakota</td>
+								<td>Houston, TX</td>
+								<td>Bakken</td>
+								<td>$10.38</td>
+							</tr>
+							<tr>
+								<td>North Dakota</td>
+								<td>NY Harbor</td>
+								<td>Bakken</td>
+								<td>$10.55</td>
+							</tr>
+							<tr>
+								<td>Alberta, CAN</td>
+								<td>Houston, TX</td>
+								<td>Canadian Heavy</td>
+								<td>$16.73</td>
+							</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Environmental Concerns</h3>
+						<ul>
+							<li>Higher carbon footprint over longer distances</li>
+							<li>Spills are easily detected</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Rail Oil Spills</h3>
+						<canvas data-chart="line">
+
+							<!--
+                            {
+                             "data": {
+                              "labels": [1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014],
+                              "datasets":[
+
+                               {
+                                "data":[1,0,5,4,1,4,1,6,7,2,2,0,3,7,4,6,2,3,13,6,3,2,1,1,1,0,3,1,1,1,2,1,1,8,1,9,34,88,119,144],
+                                "yAxisID": "1",
+                                "label":"Number of Spills","backgroundColor":"#132026"
+                               },
+                               {
+                                "data":[2000,0,117338,8142,23196,121705,100,20977,45034,3613,300,0,100,13,13921,26014,50,3,32,206,6,0,0,1,0,0,27,1,0,1,1501,70,1,17358,1,4910,3922,3724,485761,18403],
+                                "yAxisID": "2",
+                                "label":"Quantity Spilled","backgroundColor":"#2D8EBD"
+                               }
+
+                              ]
+                             },
+
+                              "options": {
+                              "legend": {
+                                    "labels": {
+                                      "display": true,
+                                      "fontColor": "#fff",
+                                      "fontSize": 20
+                                    }
+                                  },
+                                "scales": {
+                                "xAxes": [{
+                                      "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                    }],
+                                  "yAxes": [{
+                                    "position": "left",
+                                    "id": "1",
+                                    "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                  }, {
+                                   "position": "right",
+                                    "id": "2",
+                                    "ticks": {
+                                        "fontColor": "white",
+                                        "fontSize": 20
+                                      }
+                                  }]
+                                }
+                              }
+
+
+                            }
+                            -->
+
+						</canvas>
+					</section>
+				</section>
+
+				<!-- Strengths -->
+				<section>
+					<section>
+						<h2>Strengths</h2>
+					</section>
+					<section>
+						<h3>CBR Strengths</h3>
+						<ul>
+							<li>Flexibility in supply/demand</li>
+							<li>Route destinations</li>
+							<li>Pricing</li>
+						    <li>Speed of delivery</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Flexibility in Supply/Demand</h3>
+						<ul>
+							<li>Rail is quick and easy to bring online</li>
+							<li>Short term contracts vs long term pipeline contracts</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Route Destinations</h3>
+						<ul>
+							<li>Rail destinations are everywhere</li>
+						</ul>
+					</section>
+					<section>
+						<h3>US Rail Network</h3>
+						<img src="charts/rail-map.jpg"/>
+					</section>
+					<section>
+						<h3>Pricing</h3>
+						<ul>
+							<li>Prices are based on market rates</li>
+							<li>Future of CBR looks good</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Speed of Transport</h3>
+						<ul>
+							<li>Much faster than pipeline</li>
+							<li>Days vs weeks</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Future</h2>
+					</section>
+					<section>
+						<h3>Regulation</h3>
+						<ul>
+							<li>Current President restarted the Keystone XL pipeline</li>
+							<li>Republicans are usually for deregulation</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Energy Independence</h3>
+						<ul>
+							<li>Increased domestic production</li>
+							<li>Pipelines take years to build, huge initial investment</li>
+							<li>New refineries are in the works</li>
+						</ul>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Conclusion</h2>
+						<ul>
+							<li>The CBR industry relies heavily on the global oil market</li>
+							<li>Will need to bank on flexibility</li>
+							<li>Public hates pipelines</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Thank You</h2>
+						<p>Questions / Comments?</p>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				dependencies: [
+                    { src: 'plugin/chart/Chart.min.js' },
+                    { src: 'plugin/chart/csv2chart.js' }
+				],
+				transition: 'convex',
+				default_timing: 1200,
+                controlsTutorial: false
+			});
+		</script>
+	</body>
+</html>
